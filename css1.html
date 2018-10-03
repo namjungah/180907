@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<style type="text/css">
+	*{
+		/*전체 선택자 - CSS 초기화*/
+
+	}
+
+	body{
+		/*요소 (element) 선택자*/
+		color: green;
+	}
+	#i1{
+		color: blue;
+	}
+	.c1{
+		color: purple;
+	}
+	#first_test{
+		color: red;
+	}
+	#first_test:first-line{
+		font-weight: bold; /* 글씨 굵게 */
+	}	
+	#first_test:first-letter{
+		font-size: 30px; /* 글씨 크기 변경 */
+	}
+	#before_after:before{
+		content:"★시작★";
+		color:blue;
+	}
+	#before_after:after{
+		content:"★끝★";
+		color:orange;
+	}
+	.c2{
+		color: orange;
+	}
+	.c2:first-child{
+		/*nth-child(1)*/
+		font-weight: bold; 
+	}
+	.c2:last-child{
+		/*nth-child(3)*/
+		font-style: italic; 
+	}
+	.c2:nth-child(2){
+		color: black; 
+	}
+	/*:link, :visited, :hover, :active, :focus*/
+
+	a{
+		color: black;
+		text-decoration-style: none;
+	}
+
+</style>
+
+<body>
+	내용
+	<div id="i1">내용1</div>
+	<div class="c1">내용2</div>
+	<div id="first_test">내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</div>
+
+	<div id="before_after">내용</div>
+
+	<div>메인
+		<div class="c2">서브1</div>
+		<div class="c2">서브2</div>
+		<div class="c2">서브2</div>
+		<div class="c2">서브3</div>
+	</div>
+
+	<a href="https://www.google.com/">구글 바로가기</a>
+</body>
+
+
+
+
+
+
