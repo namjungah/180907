@@ -8,24 +8,46 @@
 
 			/*메인 테이블 css*/
 			table{margin: 0 auto; border: solid 5px yellow; text-align: center; font-size: 16px; word-spacing:1.5px; letter-spacing: 1px;}
-			tr{border: solid 1px gray; text-align: center; font-size: 13px; word-spacing:1px; letter-spacing: 0.5px;}
+			tr{border: solid 1px gray; text-align: center; font-size: 13px; word-spacing:1px; letter-spacing: 0.5px; padding: 12px;}
+			td{text-align: center; font-size: 13px; word-spacing:1px; letter-spacing: 0.5px; padding: 12px;}
 			
-			#before_after:before{
-			content:"🐟";
-			color:blue;
-			}
-			
-			#before_after:after{
-			content:"🐟";
-				color:blue;
-			}
+			/*마우스 색상*/
+    		a{color : white; text-decoration: none; font-family:'NanumGothic'; font-size: 16px;}
+	    	a:hover{color : gold; }
+
+			/*제목 이모티콘*/
+			#fish:before{content:"🐟"; color:blue;}
+			#fish:after{content:"🐟"; color:blue;}
+			#fish{color: white; font-family:'NanumGothic';}
 
 		</style>
 	</head>
 	<body>
+		<div id="index_text" style="text-align: center; padding-top: 100px">	
+		<table summary="목차" style="/*background-color: white;*/ padding: 26px;">
+			<tr>
+				<td><h2><span id="fish" style="padding: 4px; background-color: #00BFFF;">&nbsp;남정아 레포트&nbsp;</span></h2></td>
+			</tr>
+			<tr>
+				<td><a href="report.html" target="_blank">중간평가 레포트</a><br /></td>
+			</tr>
+			<tr>
+				<td><a href="play.html" target="_blank">자유주제 레포트</a><br /></td>
+			</tr>
+			<tr>
+				<td><a href="html_tag1.html" target="_self">html 연습1</a></td>
+			</tr>
+			<tr>	
+				<td><a href="html_tag2.html" target="_self">html 연습2</a></td>
+			</tr>
+			<tr>
+				<td><a href="html5_tag1.html" target="_self">html 연습3</a></td>
+			</tr>
+		</table>
+	</div>
 
-		<!-- audio -->
-
+	<!-- 음악 -->
+		<div style="text-align: center; padding-top: 65px;">
 		<audio controls>
 		<!-- html5에서 속성 값 생략 가능 -->
 		<source src="music.ogg" type="audio/ogg">
@@ -34,33 +56,6 @@
 		<!-- source들은 대체 소스 -->
 			your browser does not support the audio element.
 		</audio>
-
-		<div id="index_text" style="text-align: center; padding-top: 100px">	
-		<table summary="목차" style="background-color: white; padding: 16px;">
-			<tr>
-				<td id="before_after"><h3>남정아 레포트</h3></td>
-			</tr>
-				<td></td>
-			<tr>
-				<td><a href="report.html" target="_self">중간평가 레포트</a><br /></td>
-			</tr>
-				<td></td>
-			<tr>
-				<td><a href="play.html" target="_self">자유주제 레포트</a><br /></td>
-			</tr>
-				<td></td>
-			<tr>
-				<td><a href="html_tag1.html" target="_self">html1 연습1</a></td><br />
-			</tr>
-				<td></td>
-			<tr>	
-				<td><a href="html_tag2.html" target="_self">html1 연습2</a></td><br />
-			</tr>
-				<td></td>
-			<tr>
-				<td><a href="html5_tag1.html" target="_self">html1 연습2</a></td><br />
-			</tr>
-		</table>
-	</div>
+		</div>
 	</body>
 </html>
