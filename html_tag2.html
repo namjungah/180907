@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>html tag 연습2</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="test_css.css"/>
+ 		
+		<!-- euc-kr, utf-8 -->
+		<style type="text/css">
+			/*css의 주석*/
+			table{
+				border: solid 1px red;				
+			}
+			tr{
+				border: solid 1px green;
+			}
+			th, td{
+				border: solid 1px blue;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p id="content"><a href="index.html" target="_self">돌아가기</a></p>
+		<table>
+			<tr> <!-- tr : 테이블의 한 행 (한 줄) -->
+				<th>제목</th> <!-- th : 제목셀 -->
+				<td>내용</td> <!-- td : 내용셀 -->
+			</tr>
+		</table>
+
+		<table>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr> 
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+				<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>			
+		</table>
+
+		<table>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td colspan="2">3</td>
+			</tr> 
+			<tr>
+				<td>4</td>
+				<td colspan="2">5</td>
+				<td>6</td>
+			</tr>
+				<tr>
+				<td colspan="2">7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>			
+		</table>
+
+		<table>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td rowspan="3">3</td>
+			</tr> 
+			<tr>
+				<td>4</td>
+				<td rowspan="2">5</td>
+			</tr>
+				<tr>
+				<td>7</td>
+			</tr>			
+		</table>
+
+		<table>
+			<tr>
+				<td colspan="2">*</td>
+				<td rowspan="2">*</td>
+			</tr> 
+			<tr>
+				<td rowspan="2">*</td>
+				<td>*</td>
+			</tr>
+				<tr>
+					<td colspan="2">*</td>
+			</tr>
+		</table>
+
+		<table summary="전체 학생 명단 및 전화번호부">
+			<caption>학생 전화번호부</caption>
+			
+			<thead>
+				<tr>
+					<th scope="col">이름</th><th scope="col">전화번호</th> <!-- 컬럼에 연관이 있는 제목인지 애매할 경우 scope를 입력해 '지금의 th는 "열(col)"에 연관된 제목입니다'를 표현한다. -->
+				</tr> 
+				</thead>
+			
+			<tbody>
+				<tr>
+					<td>홍길동</td><td>010-1234-5678</td>
+				</tr>
+				<tr>
+					<td>김철수</td><td>010-1234-5678</td>
+				</tr>
+			</tbody>
+
+			<tfoot>
+				<tr>
+					<td></td><td>총 2명</td>
+				</tr>
+			</tfoot>
+		</table>
+
+		<!--다른곳에 잘못 쓰면 의미를 해치게 된다 / 그것을 보완한 태그 => 의미를 가지고 있지 않은 태그 -->
+		<div style="border: solid 1px red;">블록형 태그</div>
+		<!-- 특징 : 형태를 유지 -->
+
+		<span style="border: solid 1px red;">인라인형 태그</span>
+		<!-- 특징 : 자동으로 줄내림이 됨 -->
+		
+		
+	
+	</body>
+</html>
+
