@@ -41,7 +41,15 @@ a{color: blue; text-decoration-style: none;}
 #play_box{
 	background-color: white;
 	margin: 45px;
+	padding-bottom: 80px;
 }
+#play_image {
+  float: right;
+  padding-bottom: 5px;
+  padding-left: 7px;
+  height: 150px;
+}
+
 /*제목*/
 #play_title{font-family: 'NanumGothic'; font-size:65px; color: black; text-align: center; word-spacing:10px; letter-spacing: 25px;}
 
