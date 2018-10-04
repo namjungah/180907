@@ -51,8 +51,9 @@ a{color: blue; text-decoration-style: none;}
 }
 
 /*제목*/
+#play_title:before{content:"🐟";}
+#play_title:after{content:"🐟";}
 #play_title{font-family: 'NanumGothic'; font-size:65px; color: black; text-align: center; word-spacing:10px; letter-spacing: 25px;}
-
 
 /*내용 크기 확인용*/
 #no_box{background: red; opacity: 0.3; height: 280px;}
